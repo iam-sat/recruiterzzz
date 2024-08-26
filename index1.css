@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    justify-content: center;
+}
+ 
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; 
+}    
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .login,
+.auth-buttons .signup {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background: none;
+    cursor: pointer;
+}
+
+.auth-buttons .signup {
+    background-color: #333;
+    color: white;
+}
+#intro {
+    text-align: center;
+    padding: 50px;
+} 
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+} 
+main{ 
+    background-image: url(sincerely-media-aUPLLA6o_3I-unsplash.jpg); 
+    background-size: cover;
+
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; 
+}
+
+.tag-cloud span {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.tag-cloud span:hover {
+    transform: scale(1.1);
+    border-color: #333;
+} 
+.tag-cloud a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent (span) */
+}
+
+.tag-cloud a:visited {
+    color: inherit; /* Ensure visited links do not change color */
+}
+
+.tag-cloud a span {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    color: inherit; /* Ensure span text inherits color from parent */
+}
+
+.tag-cloud a span:hover {
+    transform: scale(1.1);
+    border-color: #333;
+}
+main.job-listings {
+    flex-grow: 1;
+    margin-left: 0px; /* Accounting for sidebar width + margin */
+    padding: 2rem;
+    margin-bottom: 100px;
+    background-color: #FFFFFF;
+}
+
+.job-listings h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 10fr));
+    gap: 1rem;
+}
+
+.job-card {
+    padding: 1rem;
+    background-color: #F3F4F6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.job-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #1E293B;
+}
+
+.job-card p {
+    margin-bottom: 0.5rem;
+    color: #64748B;
+}
+
+.job-card p span {
+    font-weight: bold;
+    color: #111827;
+}
+
+.details-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #3B82F6;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.details-btn:hover {
+    background-color: #2563EB;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.wrapper{
+    position: relative;
+    margin-left: 34%;
+    width: 500px;
+    height: 550px;
+    background: transparent;
+    border: 2px solid rgba(8, 8, 8, 0.5);    
+    border-radius: 20px  ;  
+    display: flex  ;
+    justify-content: center;
+    align-items: center;
+    transition: height .2s ease;
+}
+.wrapper .active {
+    height: 520px;
+}
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+.form-box .h2 {
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}  
+.btn-1 {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: #FFFFFF;
+    font-weight: 50;
+    margin-top: 5%;
+}
+.login-register {
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px ;  
+}
+.login-register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover{
+    text-decoration: underline; 
+}
